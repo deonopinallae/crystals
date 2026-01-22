@@ -1,0 +1,63 @@
+@import 'tailwindcss';
+@import './vars.scss';
+@import './globals.scss';
+
+*,
+*::after,
+*::before,
+html {
+	box-sizing: border-box;
+}
+body,
+#root {
+	height: 100vh;
+}
+
+html{
+	font-size: 14px;
+	@media (min-width: $media-width-tablet-min){
+		font-size: 16px;
+	   
+	}
+}
+body {
+	font-weight: 400;
+	font-size: var(--font-size-sm);
+	color: var(--font-color-main);
+	background-color: var(--bg-color);
+	line-height: 100%;
+}
+section {
+	height: 100%;
+}
+h1 {
+	font-size: var(--font-size-lg);
+	font-weight: 600;
+	line-height: 130%;
+}
+h2 {
+	font-size: var(--font-size-md);
+	font-weight: 600;
+	line-height: 130%;
+	@media (min-width: 1024px) {
+		font-size: var(--font-size-xl);
+	}
+}
+a {
+	text-decoration: none;
+}
+input {
+	font-family: inherit;
+	outline: none;
+}
+button {
+	font-family: inherit;
+	white-space: nowrap;
+	cursor: pointer;
+}
+li {
+	list-style: none;
+}
+img {
+	width: 100%;
+}

@@ -1,0 +1,23 @@
+.container {
+	padding-left: var(--container-min-padding);
+	padding-right: var(--container-min-padding);
+	min-width: 100%;
+	width: 100%;
+	@media (min-width: 724px) {
+		padding-left: var(--container-max-padding);
+		padding-right: var(--container-max-padding);
+	}
+}
+.app-column {
+	max-width: var(--app-max-width);
+}
+
+.font-bricolage {
+	font-family: var(--font-bricolage);
+}
+.font-roboto {
+	font-family: var(--font-roboto);
+}
+.font-newsreader {
+	font-family: var(--font-newsreader);
+}
