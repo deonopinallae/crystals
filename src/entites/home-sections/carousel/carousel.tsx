@@ -11,7 +11,7 @@ interface CarouselProps {
 	speed?: number
 }
 
-export const Carusel = ({
+export const Carousel = ({
 	items = [
 		{ id: 1, content: 'crystals.com' },
 		{ id: 2, content: 'crystals.com' },

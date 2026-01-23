@@ -13,11 +13,10 @@ body,
 	height: 100vh;
 }
 
-html{
+html {
 	font-size: 14px;
-	@media (min-width: $media-width-tablet-min){
+	@media (min-width: $media-width-tablet-min) {
 		font-size: 16px;
-	   
 	}
 }
 body {
@@ -33,9 +32,13 @@ section {
 	height: 100%;
 }
 h1 {
-	font-size: var(--font-size-lg);
-	font-weight: 600;
-	line-height: 130%;
+	font-family: var(--font-newsreader);
+	font-size: 60px;
+	font-weight: 400;
+	line-height: 100%;
+	@media (min-width: 1024px) {
+		font-size: 118px;
+	}
 }
 h2 {
 	font-size: var(--font-size-md);
