@@ -30,6 +30,7 @@ body {
 }
 section {
 	height: 100%;
+	border-bottom: 1px solid #EAC1BF;
 }
 h1 {
 	font-family: var(--font-newsreader);
@@ -41,11 +42,12 @@ h1 {
 	}
 }
 h2 {
-	font-size: var(--font-size-md);
+	font-family: var(--font-bricolage);
+	font-size: 2rem;
 	font-weight: 600;
 	line-height: 130%;
 	@media (min-width: 1024px) {
-		font-size: var(--font-size-xl);
+		font-size: 3rem;
 	}
 }
 a {

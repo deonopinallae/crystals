@@ -1,5 +1,3 @@
-export * from './buttons/back-btn'
-export * from './buttons/auth-btn'
 export * from './buttons/button'
 export * from './input'
 export * from './layout/header/home-header'

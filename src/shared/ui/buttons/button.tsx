@@ -8,9 +8,9 @@ export const Button = ({ children, className, ...props }: ButtonProps) => {
 	return (
 		<button
 			{...props}
-			className={`block bg-[var(--main-dark-color)] rounded-[7px] ${className ?? ''}`}
+			className={` bg-[#000000] rounded-[32px] py-[14px] px-[36px] text-[20px] font-bricolage uppercase ${className ?? ''}`}
 		>
-			<span className="text-white font-semibold text-md">{children}</span>
+			<span className="text-white">{children}</span>
 		</button>
 	)
 }

@@ -1,0 +1,13 @@
+.cardsSlider{
+    background-image: url('../../../../public/cards-slider-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // min-height: 100vh;
+	&Item{
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+
+	}
+}
