@@ -12,10 +12,10 @@ export const HomeHeader = () => {
 					))}
 					
 				</button>
-				<div className="font-bricolage uppercase hidden xs:block">Free shipping on orders over $75</div>
+				<div className="font-bricolage uppercase md:block hidden">Free shipping on orders over $75</div>
 				<div className='flex gap-[1rem] items-center'>
-					<SearchIcon />
-					<PyramidIcon />
+					<button><SearchIcon /></button>
+					<button><PyramidIcon /></button>
 				</div>
 			</header>
 		</>

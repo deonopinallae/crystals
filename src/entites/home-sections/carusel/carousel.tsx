@@ -24,7 +24,6 @@ export const Carusel = ({
 	],
 	speed = 30,
 }: CarouselProps) => {
-	// Triple items for seamless infinite circular loop
 	const tripleItems = [...items, ...items]
 
 	return (
@@ -38,7 +37,7 @@ export const Carusel = ({
 						<div key={index} className={styles.slide}>
 							<div className={styles.slideContent}>
 								{typeof item.content === 'string' ? (
-									<span className="uppercase text-[24px]">
+									<span className="uppercase sm:text-[1.5rem] text-[1.2rem]">
 										{item.content}
 									</span>
 								) : (
