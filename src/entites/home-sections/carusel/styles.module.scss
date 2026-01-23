@@ -1,0 +1,44 @@
+.carouselWrapper {
+  width: 100%;
+  border-top: 1px solid #eac1bf;
+  border-bottom: 1px solid #eac1bf;
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+.carouselContainer {
+  overflow: hidden;
+  width: 100%;
+}
+
+.track {
+  display: flex;
+  animation: scroll var(--speed, 30s) linear infinite;
+  will-change: transform;
+  width: fit-content;
+}
+
+.slide {
+  min-width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+
+.slideContent {
+  white-space: nowrap;
+  text-align: center;
+  padding: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 3));
+  }
+}
+

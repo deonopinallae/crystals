@@ -6,7 +6,7 @@ export const PyramidIcon = () => (
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"
 	>
-		<g clip-path="url(#clip0_1_56)">
+		<g clipPath="url(#clip0_1_56)">
 			<path d="M16 2V30" stroke="#111111" strokeWidth="2" strokeMiterlimit="10" />
 			<path
 				d="M2 19L16 30L30 19L15.943 2L2 19Z"

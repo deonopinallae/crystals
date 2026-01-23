@@ -1,3 +1,4 @@
+import { Carusel } from '@/entites/home-sections'
 import { HomeHeader, Page } from '@/shared/ui'
 
 export default function Home() {
@@ -5,7 +6,8 @@ export default function Home() {
 		<>
 			<HomeHeader />
 			<Page className='mt-[1.81rem]'>
-				<div></div>
+				<div className='container'></div>
+				<Carusel/>
 			</Page>
 		</>
 	)
