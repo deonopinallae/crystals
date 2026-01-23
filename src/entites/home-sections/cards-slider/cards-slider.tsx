@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 export const CardsSlider = () => {
 	return (
 		<>
-			<section className={`${styles.cardsSlider} flex gap-[1px] `}>
+			<section className={`${styles.cardsSlider} flex gap-[1px] relative`}>
 				<div className="flex flex-col gap-[5rem] w-[50%] border-r border-r-[#EAC1BF] pt-[2.5rem] xl:pt-[6.6rem] pb-[8.1rem] xl:pb-[11.6] px-[3.7rem] xl:px-[8.1rem]">
 					<h2>
 						The world’s finest crystals, ethically sourced and hand selected

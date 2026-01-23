@@ -5,7 +5,7 @@ import styles from './styles.module.scss'
 export const HomeHeader = () => {
 	return (
 		<>
-			<header className={`${styles.header} py-[1.13rem] lg:py-[1.88rem] container`}>
+			<header className={`${styles.header} py-[1.13rem] lg:py-[1.88rem] container z-2`}>
 				<button className="flex flex-col gap-[7px]">
 					{[...Array(3)].map((_, i) => (
 						<div key={i} className="w-[28px] h-[2px] bg-black"></div>
