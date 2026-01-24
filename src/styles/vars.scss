@@ -8,12 +8,9 @@
 //app color
 :root {
 	--bg-color: #eeeeee;
-	--main-font-color: #000;
-	--main-light-color: #eee9ff;
+	--font-color-main: #000;
 	--main-dark-color: #5f33e1;
-	--light-color: #ab94ff;
-	--light-font-color: #6e6a7c;
-	--icons-default-color:#292D32
+	--border-light-color: #eac1bf;
 }
 
 //media
@@ -25,16 +22,11 @@
 
 //fonts
 :root {
-	--font-family-main: 'Lexend Deca', sans-serif;
 	--font-size-xxs: .5rem;
 	--font-size-xs: .7rem;
 	--font-size-sm: 1rem;
 	--font-size-md: 1.2rem;
 	--font-size-lg: 1.5rem;
-	--font-size-xl: 3rem;
-}
-.text-xxs {
-	font-size: var(--font-size-xxs);
 }
 .text-xs {
 	font-size: var(--font-size-xs);

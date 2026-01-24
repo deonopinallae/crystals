@@ -1,7 +1,7 @@
 .carouselWrapper {
 	width: 100%;
-	border-top: 1px solid #eac1bf;
-	border-bottom: 1px solid #eac1bf;
+	border-top: 1px solid var(--border-light-color);
+	border-bottom: 1px solid var(--border-light-color);
 	padding: 1rem 0;
 	overflow: hidden;
 	@media (min-width: 640px) {

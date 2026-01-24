@@ -1,9 +1,9 @@
 'use client'
 import styles from './styles.module.scss'
+import { COLORS } from '@/shared/lib/colors'
 import { Button } from '@/shared/ui'
 import { ReactNode } from 'react'
 import { useModalStore } from '../model/modal-window-store'
-import { CheckmarkIcon } from '@/shared/ui/icons'
 
 interface ModalWindowProps {
 	title: string
@@ -29,7 +29,7 @@ export const ModalWindow = ({
 	if (!isOpen) return
 	return (
 		<>
-			<div onClick={close} className="absolute inset-0 bg-[rgba(0,0,0,0.42)] z-10">
+			<div onClick={close} className="absolute inset-0 z-10" style={{ backgroundColor: COLORS.BLACK_TRANSPARENT_42 }}>
 				<div onClick={(e) => e.stopPropagation()} className={styles.modalWindow}>
 					<h2 className="mb-[1.06rem]">{title}</h2>
 					{children}
@@ -39,7 +39,7 @@ export const ModalWindow = ({
 						onClick={onClick}
 						className="mt-[3.31rem] mx-auto px-[2.75rem] py-[0.56rem]"
 					>
-						<CheckmarkIcon className='w-[22px] white' />
+						✓
 					</Button>
 				</div>
 			</div>

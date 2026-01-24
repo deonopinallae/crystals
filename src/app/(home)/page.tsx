@@ -1,4 +1,4 @@
-import { CardsSlider, Carousel, HomeMainSection, Reviews } from '@/entites/home-sections'
+import { CardsSliderSection, Carousel, HomeMainSection, ReviewsSection, CrystalsListSection } from '@/entites/home-sections'
 import { HomeHeader, Page } from '@/shared/ui'
 
 export default function Home() {
@@ -8,8 +8,9 @@ export default function Home() {
 			<Page className="mt-[5rem]">
 				<HomeMainSection />
 				<Carousel />
-				<CardsSlider />
-				<Reviews />
+				<CardsSliderSection />
+				<ReviewsSection />
+				<CrystalsListSection/>
 			</Page>
 		</>
 	)

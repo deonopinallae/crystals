@@ -1,0 +1,8 @@
+export const COLORS = {
+	BLACK: '#000000',
+	WHITE_TRANSPARENT_80: 'rgb(255,255,255,0.8)',
+	BLACK_TRANSPARENT_42: 'rgba(0,0,0,0.42)',
+	TEXT_DARK: '#24252C',
+	ICON_STROKE: '#111111',
+}
+

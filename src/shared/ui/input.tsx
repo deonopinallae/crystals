@@ -1,4 +1,5 @@
 import { forwardRef, InputHTMLAttributes } from 'react'
+import { COLORS } from '@/shared/lib/colors'
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 	placeholder: string
@@ -13,7 +14,10 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
 				ref={ref}
 				type={type}
 				placeholder={placeholder}
-				className={`${className} bg-white border border-[#5F33E1] text-[#24252C] text-[12px] py-[0.44rem] px-[0.94rem] rounded-[15px] block`}
+				className={`${className} bg-white border text-[12px] py-[0.44rem] px-[0.94rem] rounded-[15px] block`}
+				style={{
+					color: COLORS.TEXT_DARK,
+				}}
 				{...props}
 			/>
 		)
