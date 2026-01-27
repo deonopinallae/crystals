@@ -14,7 +14,7 @@ export const ReviewsSection = () => {
 				<div className="w-[50%]">
 					<div
 						className={`${styles.reviewsImage} relative xl:w-[36rem] w-[20rem] xl:h-[36rem] h-[20rem] `}
-					><Button className="!text-black absolute text-[1rem] xl:text-[1.25rem] py-[0.8rem] px-[1.8rem] rounded-[2rem] left-1/2 bottom-[2rem] -translate-x-1/2 -translate-y-1/2" style={{ backgroundColor: COLORS.WHITE_TRANSPARENT_80 }}>
+					><Button className="!text-black !bg-[rgb(255,255,255,0.8)] absolute text-[1rem] xl:text-[1.25rem] py-[0.8rem] px-[1.8rem] rounded-[2rem] left-1/2 bottom-[2rem] -translate-x-1/2 -translate-y-1/2">
 							Subscribe and save
 						</Button>
 					</div>
