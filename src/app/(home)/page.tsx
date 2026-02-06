@@ -1,5 +1,5 @@
 import { CardsSliderSection, Carousel, HomeMainSection, ReviewsSection, CrystalsListSection } from '@/entites/home-sections'
-import { HomeHeader, Page } from '@/shared/ui'
+import { HomeHeader, Page, Footer } from '@/shared/ui'
 
 export default function Home() {
 	return (
@@ -12,6 +12,7 @@ export default function Home() {
 				<ReviewsSection />
 				<CrystalsListSection/>
 			</Page>
+			<Footer />
 		</>
 	)
 }

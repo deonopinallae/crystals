@@ -14,8 +14,8 @@ export const newsreader = Newsreader({
 })
 
 export const metadata: Metadata = {
-	title: { template: '%s ', default: 'crystals' },
-	description: '',
+	title: { template: '%s | Crystals', default: 'Crystals - Tools for Everyday Magic' },
+	description: 'Discover ethically sourced, hand-selected crystals for their power to guide, enhance and protect your everyday life.',
 }
 
 export default function RootLayout({
