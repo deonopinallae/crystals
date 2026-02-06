@@ -5,4 +5,14 @@
 	align-items: center;
 	position: fixed;
 	background-color: white;
+	top: 0;
+	left: 0;
+	right: 0;
+	border-bottom: 1px solid var(--border-light-color);
+	padding-left: var(--container-min-padding);
+	padding-right: var(--container-min-padding);
+	@media (min-width: 724px) {
+		padding-left: var(--container-max-padding);
+		padding-right: var(--container-max-padding);
+	}
 }
