@@ -1,4 +1,11 @@
-import { CardsSliderSection, Carousel, HomeMainSection, ReviewsSection, CrystalsListSection } from '@/entites/home-sections'
+import {
+	CardsSliderSection,
+	Carousel,
+	HomeMainSection,
+	ReviewsSection,
+	CrystalsListSection,
+} from '@/entities/home-sections'
+import { ShopByIntentionSection } from '@/entities/home-sections/shop-by-intention/shop-by-intention'
 import { HomeHeader, Page } from '@/shared/ui'
 
 export default function Home() {
@@ -10,7 +17,8 @@ export default function Home() {
 				<Carousel />
 				<CardsSliderSection />
 				<ReviewsSection />
-				<CrystalsListSection/>
+				<CrystalsListSection />
+				<ShopByIntentionSection />
 			</Page>
 		</>
 	)

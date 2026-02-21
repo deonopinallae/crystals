@@ -1,0 +1,55 @@
+.shopByIntentionSection {
+	background-color: #fbf9f9;
+	border: 0.0625rem solid #eac1bf;
+}
+
+.title {
+	font-family: 'Ogg', serif;
+	font-size: 3rem;
+	font-weight: 400;
+	line-height: 4.25rem;
+	color: #000000;
+}
+
+.intentionFigure {
+	position: relative;
+}
+
+.intentionItem {
+	position: relative;
+}
+
+.icon {
+	display: block;
+}
+
+.caption {
+	color: #000000;
+	font-family: 'Basis Grotesque Pro', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1rem;
+	text-align: center;
+	letter-spacing: 0.0625rem;
+	text-transform: uppercase;
+}
+
+.intentionItem:first-child .intentionFigure::before {
+	content: '';
+	position: absolute;
+	top: -0.25rem;
+	left: 50%;
+	z-index: 0;
+	width: 7rem;
+	height: 7rem;
+	background-color: rgba(185, 86, 187, 0.35);
+	border-radius: 2rem;
+	filter: blur(1.5rem);
+	transform: translateX(-50%);
+}
+
+.intentionItem:first-child .intentionFigure .icon,
+.intentionItem:first-child .intentionFigure .caption {
+	position: relative;
+	z-index: 1;
+}
