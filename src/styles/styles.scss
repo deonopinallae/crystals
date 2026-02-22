@@ -1,6 +1,6 @@
-@import 'tailwindcss';
-@import './vars.scss';
-@import './globals.scss';
+@use 'tailwindcss';
+@use './vars.scss';
+@use './globals.scss';
 
 *,
 *::after,
@@ -15,7 +15,7 @@ body,
 
 html {
 	font-size: 14px;
-	@media (min-width: $media-width-tablet-min) {
+	@media (min-width: 412px) {
 		font-size: 16px;
 	}
 }
