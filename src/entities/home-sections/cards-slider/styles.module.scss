@@ -1,12 +1,118 @@
-.cardsSlider{
-    background-image: url('../../../../public/cards-slider-bg.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-	&Item{
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
+.cardsSlider {
+	background-image: url('../../../../public/cards-slider-bg.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 
+.sliderPane {
+	position: relative;
+	width: 100%;
+	min-height: 28rem;
+	overflow: hidden;
+	cursor: pointer;
+
+	@media (min-width: 1024px) {
+		width: 50%;
+		min-height: 56.25rem;
 	}
+}
+
+.sliderViewport {
+	position: relative;
+	height: 100%;
+	min-height: inherit;
+	padding: 2.5rem 1.5rem 4.5rem;
+
+	@media (min-width: 768px) {
+		padding: 3rem 2rem 5rem;
+	}
+
+	@media (min-width: 1024px) {
+		padding: 5.75rem 2.5rem 6.5rem;
+	}
+}
+
+.cardsSliderItem {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(1.5rem) scale(0.96);
+	transition:
+		opacity 280ms ease,
+		transform 360ms ease;
+}
+
+.cardsSliderItemActive {
+	opacity: 1;
+	pointer-events: auto;
+	transform: translateY(0) scale(1);
+}
+
+.cardGlow {
+	width: min(86%, 35.63rem);
+	aspect-ratio: 570 / 588;
+	border-radius: 7.25rem;
+	filter: blur(3.2rem);
+	opacity: 0;
+	transform: scale(0.94);
+	transition:
+		opacity 1s ease,
+		transform 1s ease;
+}
+
+.cardsSliderItemActive .cardGlow {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.cardImage {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: min(78%, 29.44rem);
+	transform: translate(-50%, -50%);
+	object-fit: contain;
+	opacity: 0;
+	transition: opacity 1.5s ease 260ms;
+}
+
+.cardsSliderItemActive .cardImage {
+	opacity: 1;
+}
+
+.pagination {
+	position: absolute;
+	right: 1rem;
+	bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	opacity: 0;
+	transform: translateY(0.5rem);
+	transition:
+		opacity 300ms ease,
+		transform 300ms ease;
+}
+
+.paginationVisible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.paginationDot {
+	width: 1rem;
+	height: 1rem;
+	border: 1px solid #eac1bf;
+	background-color: rgba(255, 255, 255, 0.3);
+	cursor: pointer;
+	transition: background-color 220ms ease;
+}
+
+.paginationDotActive {
+	background-color: #eac1bf;
 }
