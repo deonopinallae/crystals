@@ -36,6 +36,35 @@
 	padding: 0;
 }
 
+.hoverWord {
+	display: inline-block;
+	padding: 0.06em 0;
+	color: #000000;
+	background: none;
+	text-shadow: none;
+	cursor: pointer;
+	transition:
+		color 280ms ease,
+		background-position 420ms ease;
+}
+
+.hoverWord:hover {
+	color: transparent;
+	background: linear-gradient(
+		90deg,
+		#21c6a3 0%,
+		#54a4ff 30%,
+		#8a65ff 58%,
+		#f2a7de 100%
+	);
+	background-size: 200% 100%;
+	background-position: 0% 50%;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-position: 100% 50%;
+}
+
 @keyframes scroll {
 	0% {
 		transform: translateX(0);

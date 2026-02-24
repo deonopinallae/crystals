@@ -37,7 +37,9 @@ export const Carousel = ({
 						<div key={index} className={styles.slide}>
 							<div className={styles.slideContent}>
 								{typeof item.content === 'string' ? (
-									<span className="uppercase sm:text-[1.5rem] text-[1.2rem]">
+									<span
+										className={`${styles.hoverWord} uppercase sm:text-[1.5rem] text-[1.2rem]`}
+									>
 										{item.content}
 									</span>
 								) : (
