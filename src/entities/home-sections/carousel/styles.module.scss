@@ -1,17 +1,20 @@
-.carouselWrapper {
-	width: 100%;
-	border-top: 1px solid var(--border-light-color);
-	border-bottom: 1px solid var(--border-light-color);
-	padding: 1rem 0;
-	overflow: hidden;
-	@media (min-width: 640px) {
-		padding: 2rem 0;
-	}
-}
+.carousel {
+	&Wrapper {
+		width: 100%;
+		border-top: 1px solid var(--border-light-color);
+		border-bottom: 1px solid var(--border-light-color);
+		padding: 1rem 0;
+		overflow: hidden;
 
-.carouselContainer {
-	overflow: hidden;
-	width: 100%;
+		@media (min-width: 640px) {
+			padding: 2rem 0;
+		}
+	}
+
+	&Container {
+		overflow: hidden;
+		width: 100%;
+	}
 }
 
 .track {
@@ -28,12 +31,12 @@
 	justify-content: center;
 	flex-shrink: 0;
 	margin-right: 16px;
-}
 
-.slideContent {
-	white-space: nowrap;
-	text-align: center;
-	padding: 0;
+	&Content {
+		white-space: nowrap;
+		text-align: center;
+		padding: 0;
+	}
 }
 
 .hoverWord {
@@ -46,23 +49,23 @@
 	transition:
 		color 280ms ease,
 		background-position 420ms ease;
-}
 
-.hoverWord:hover {
-	color: transparent;
-	background: linear-gradient(
-		90deg,
-		#21c6a3 0%,
-		#54a4ff 30%,
-		#8a65ff 58%,
-		#f2a7de 100%
-	);
-	background-size: 200% 100%;
-	background-position: 0% 50%;
-	-webkit-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-position: 100% 50%;
+	&:hover {
+		color: transparent;
+		background: linear-gradient(
+			90deg,
+			#21c6a3 0%,
+			#54a4ff 30%,
+			#8a65ff 58%,
+			#f2a7de 100%
+		);
+		background-size: 200% 100%;
+		background-position: 0% 50%;
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-position: 100% 50%;
+	}
 }
 
 @keyframes scroll {

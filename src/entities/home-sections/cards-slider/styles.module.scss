@@ -3,92 +3,137 @@
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-}
 
-.sliderPane {
-	position: relative;
-	width: 100%;
-	min-height: 28rem;
-	overflow: hidden;
-	cursor: pointer;
+	&Item {
+		position: absolute;
+		inset: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		opacity: 0;
+		pointer-events: none;
+		transform: translateY(1.5rem) scale(0.96);
+		transition:
+			opacity 280ms ease,
+			transform 360ms ease;
+	}
 
-	@media (min-width: 1024px) {
-		width: 50%;
-		min-height: 56.25rem;
+	&ItemActive {
+		opacity: 1;
+		pointer-events: auto;
+		transform: translateY(0) scale(1);
+
+		.cardGlow {
+			opacity: 1;
+			transform: scale(1);
+		}
+
+		.cardImage {
+			opacity: 1;
+		}
 	}
 }
 
-.sliderViewport {
-	position: relative;
-	height: 100%;
-	min-height: inherit;
-	padding: 2.5rem 1.5rem 4.5rem;
+.slider {
+	&Pane {
+		position: relative;
+		width: 100%;
+		min-height: 21.5rem;
+		overflow: hidden;
+		cursor: pointer;
 
-	@media (min-width: 768px) {
-		padding: 3rem 2rem 5rem;
+		@media (min-width: 640px) {
+			min-height: 24.5rem;
+		}
+
+		@media (min-width: 768px) {
+			min-height: 30rem;
+		}
+
+		@media (min-width: 1024px) {
+			width: 50%;
+			min-height: 56.25rem;
+		}
+	}
+	&Viewport {
+		position: relative;
+		height: 100%;
+		min-height: inherit;
+		padding: 1.25rem 0.75rem 3.25rem;
+
+		@media (min-width: 640px) {
+			padding: 1.75rem 1rem 3.75rem;
+		}
+
+		@media (min-width: 768px) {
+			padding: 3rem 2rem 5rem;
+		}
+
+		@media (min-width: 1024px) {
+			padding: 5.75rem 2.5rem 6.5rem;
+		}
+	}
+}
+
+.card {
+	&Glow {
+		width: min(94%, 23rem);
+		aspect-ratio: 570 / 588;
+		border-radius: 5rem;
+		filter: blur(2.2rem);
+		opacity: 0;
+		transform: scale(0.94);
+		transition:
+			opacity 1s ease,
+			transform 1s ease;
+
+		@media (min-width: 640px) {
+			width: min(92%, 29rem);
+			border-radius: 6rem;
+			filter: blur(2.6rem);
+		}
+
+		@media (min-width: 1024px) {
+			width: min(90%, 37rem);
+			border-radius: 7.25rem;
+			filter: blur(3.2rem);
+		}
 	}
 
-	@media (min-width: 1024px) {
-		padding: 5.75rem 2.5rem 6.5rem;
+	&Image {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: auto;
+		height: min(78%, 16rem);
+		max-width: 90%;
+		max-height: calc(100% - 3.75rem);
+		transform: translate(-50%, -50%);
+		object-fit: contain;
+		opacity: 0;
+		transition: opacity 1.5s ease 260ms;
+
+		@media (min-width: 640px) {
+			height: min(80%, 19rem);
+			max-width: 88%;
+		}
+
+		@media (min-width: 768px) {
+			height: min(82%, 22rem);
+			max-width: 86%;
+		}
+
+		@media (min-width: 1024px) {
+			height: min(84%, 31rem);
+			max-width: 84%;
+		}
 	}
-}
-
-.cardsSliderItem {
-	position: absolute;
-	inset: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	opacity: 0;
-	pointer-events: none;
-	transform: translateY(1.5rem) scale(0.96);
-	transition:
-		opacity 280ms ease,
-		transform 360ms ease;
-}
-
-.cardsSliderItemActive {
-	opacity: 1;
-	pointer-events: auto;
-	transform: translateY(0) scale(1);
-}
-
-.cardGlow {
-	width: min(86%, 35.63rem);
-	aspect-ratio: 570 / 588;
-	border-radius: 7.25rem;
-	filter: blur(3.2rem);
-	opacity: 0;
-	transform: scale(0.94);
-	transition:
-		opacity 1s ease,
-		transform 1s ease;
-}
-
-.cardsSliderItemActive .cardGlow {
-	opacity: 1;
-	transform: scale(1);
-}
-
-.cardImage {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	width: min(78%, 29.44rem);
-	transform: translate(-50%, -50%);
-	object-fit: contain;
-	opacity: 0;
-	transition: opacity 1.5s ease 260ms;
-}
-
-.cardsSliderItemActive .cardImage {
-	opacity: 1;
 }
 
 .pagination {
 	position: absolute;
-	right: 1rem;
-	bottom: 1rem;
+	right: 0.75rem;
+	bottom: 0.75rem;
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
@@ -97,22 +142,37 @@
 	transition:
 		opacity 300ms ease,
 		transform 300ms ease;
-}
 
-.paginationVisible {
-	opacity: 1;
-	transform: translateY(0);
-}
+	@media (min-width: 640px) {
+		right: 1rem;
+		bottom: 1rem;
+	}
 
-.paginationDot {
-	width: 1rem;
-	height: 1rem;
-	border: 1px solid #eac1bf;
-	background-color: rgba(255, 255, 255, 0.3);
-	cursor: pointer;
-	transition: background-color 220ms ease;
-}
+	@media (min-width: 1024px) {
+		right: 1.25rem;
+		bottom: 1.25rem;
+	}
 
-.paginationDotActive {
-	background-color: #eac1bf;
+	&Visible {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	&Dot {
+		width: 0.875rem;
+		height: 0.875rem;
+		border: 1px solid #eac1bf;
+		background-color: rgba(255, 255, 255, 0.3);
+		cursor: pointer;
+		transition: background-color 220ms ease;
+
+		@media (min-width: 640px) {
+			width: 1rem;
+			height: 1rem;
+		}
+
+		&Active {
+			background-color: #eac1bf;
+		}
+	}
 }

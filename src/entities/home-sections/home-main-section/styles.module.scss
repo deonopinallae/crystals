@@ -1,10 +1,13 @@
-.homeMainSection{
-    background-image: url('../../../../public/bg-lg.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 30rem;
-    @media (min-width: 1024px) {
-        min-height: 60rem;
-    }
+.homeMain {
+	&Section {
+		background-image: url('../../../../public/bg-lg.png');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		min-height: 30rem;
+
+		@media (min-width: 1024px) {
+			min-height: 60rem;
+		}
+	}
 }
