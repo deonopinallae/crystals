@@ -4,6 +4,7 @@ import {
 	HomeMainSection,
 	ReviewsSection,
 	CrystalsListSection,
+	GiftsOfGratitudeSection,
 } from '@/entities/home-sections'
 import { ShopByIntentionSection } from '@/entities/home-sections/shop-by-intention/shop-by-intention'
 import { HomeHeader, Page } from '@/shared/ui'
@@ -19,6 +20,7 @@ export default function Home() {
 				<ReviewsSection />
 				<CrystalsListSection />
 				<ShopByIntentionSection />
+				<GiftsOfGratitudeSection />
 			</Page>
 		</>
 	)

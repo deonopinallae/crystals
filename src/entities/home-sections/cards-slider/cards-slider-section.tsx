@@ -74,12 +74,12 @@ export const CardsSliderSection = () => {
 		<section
 			className={`${styles.cardsSlider} relative flex flex-col gap-px lg:flex-row`}
 		>
-			<div className="flex w-full flex-col gap-6 border-b border-[#eac1bf] px-4 pb-8 pt-6 sm:gap-8 sm:px-6 sm:pb-9 sm:pt-7 md:px-8 md:pb-10 md:pt-8 lg:w-1/2 lg:gap-10 lg:border-b-0 lg:border-r lg:px-[3.7rem] lg:pb-[8.1rem] lg:pt-[2.5rem] xl:gap-[5rem] xl:px-[8.1rem] xl:pb-[11.6rem] xl:pt-[6.6rem]">
-				<h2 className="text-[1.25rem] leading-[1.28] sm:text-[1.45rem] md:text-[1.7rem] lg:text-[2rem] xl:text-[2.3rem]">
+			<div className="flex w-full flex-col gap-6 border-b border-[#eac1bf] px-4 pb-8 pt-6 sm:gap-8 sm:px-6 sm:pb-9 sm:pt-7 md:px-8 md:pb-10 md:pt-8 lg:w-1/2 lg:gap-10 lg:border-b-0 lg:border-r lg:px-[6.2rem] lg:pb-[10.8rem] lg:pt-[4.2rem] xl:gap-[5rem] xl:px-[8.1rem] xl:pb-[11.6rem] xl:pt-[6.6rem]">
+				<h2 className="text-[1.25rem] leading-[1.28] sm:text-[1.45rem] md:text-[1.7rem] lg:text-[2.5rem] lg:leading-[1.35] xl:text-[3rem] xl:leading-[1.42]">
 					The world’s finest crystals, ethically sourced and hand selected for
 					their power to guide, enhance and protect our everyday lives.
 				</h2>
-				<Button className="px-5 py-2.5 text-[1rem] sm:w-[11.2rem] sm:px-6 sm:py-3 lg:w-[11.8rem] text-center">
+				<Button className="px-5 py-2.5 text-[1rem] sm:w-[11.2rem] sm:px-6 sm:py-3 lg:w-[13.3125rem] lg:text-[1.25rem] text-center">
 					Shop all
 				</Button>
 			</div>
