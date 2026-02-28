@@ -9,7 +9,7 @@ import {
 	TestimonialHighlightSection,
 } from '@/entities/home-sections'
 import { ShopByIntentionSection } from '@/entities/home-sections/shop-by-intention/shop-by-intention'
-import { HomeHeader, Page } from '@/shared/ui'
+import { HomeHeader, Page, Footer } from '@/shared/ui'
 
 export default function Home() {
 	return (
@@ -26,6 +26,7 @@ export default function Home() {
 				<CrystalClubSection />
 				<TestimonialHighlightSection />
 			</Page>
+			<Footer />
 		</>
 	)
 }
