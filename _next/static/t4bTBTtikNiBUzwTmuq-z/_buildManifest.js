@@ -3,8 +3,8 @@ self.__BUILD_MANIFEST = {
     "afterFiles": [],
     "beforeFiles": [
       {
-        "source": "/REPO_NAME//_next/:path+",
-        "destination": "/REPO_NAME/_next/:path+"
+        "source": "/crystals//_next/:path+",
+        "destination": "/crystals/_next/:path+"
       }
     ],
     "fallback": []
