@@ -3,25 +3,26 @@
 import { useMemo, useState } from 'react'
 import { Button } from '@/shared/ui'
 import styles from './styles.module.scss'
+import { assetPath } from '@/shared/lib/asset-path'
 
 const cards = [
 	{
 		id: 1,
 		name: 'Malachite',
 		color: 'rgb(63, 202, 135, 0.3)',
-		image: '/malachite.png',
+		image: assetPath('/malachite.png'),
 	},
 	{
 		id: 2,
 		name: 'Malachite',
 		color: 'rgb(63, 202, 135, 0.3)',
-		image: '/malachite.png',
+		image: assetPath('/malachite.png'),
 	},
 	{
 		id: 3,
 		name: 'Malachite',
 		color: 'rgb(63, 202, 135, 0.3)',
-		image: '/malachite.png',
+		image: assetPath('/malachite.png'),
 	},
 ]
 

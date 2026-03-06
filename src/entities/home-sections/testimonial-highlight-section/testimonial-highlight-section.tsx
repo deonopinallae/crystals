@@ -1,8 +1,9 @@
 import { WaveIcon } from '@/shared/ui/icons'
+import { assetPath } from '@/shared/lib/asset-path'
 
 const reviewer = {
 	name: 'Kaity G',
-	avatar: '/testimonial-highlight-section/avatar.png',
+	avatar: assetPath('/testimonial-highlight-section/avatar.png'),
 	testimonial:
 		'The crystals were amazing. Wonderful quality and I could feel their energy immediately.',
 }
@@ -14,13 +15,13 @@ export const TestimonialHighlightSection = () => {
 				alt=""
 				aria-hidden
 				className=" absolute left-0 top-1/2 hidden max-w-[22rem] -translate-y-1/2 min-[90rem]:block"
-				src="/testimonial-highlight-section/decor-right.png"
+				src={assetPath('/testimonial-highlight-section/decor-right.png')}
 			/>
 			<img
 				alt=""
 				aria-hidden
 				className=" absolute right-0 top-1/2 hidden max-w-[22rem] -translate-y-1/2 min-[90rem]:block"
-				src="/testimonial-highlight-section/decor-left.png"
+				src={assetPath('/testimonial-highlight-section/decor-left.png')}
 			/>
 			<div className="flex w-full max-w-[83.75rem] flex-col items-center gap-[1.8rem]">
 				<img

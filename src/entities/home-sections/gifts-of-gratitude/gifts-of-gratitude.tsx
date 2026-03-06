@@ -1,23 +1,24 @@
 import styles from './styles.module.scss'
+import { assetPath } from '@/shared/lib/asset-path'
 
 const giftKits = [
 	{
 		id: 1,
 		title: 'Box Kits',
 		subtitle: 'Starting from $29.95',
-		image: '/gifts-of-gratitude/box-kits.png',
+		image: assetPath('/gifts-of-gratitude/box-kits.png'),
 	},
 	{
 		id: 2,
 		title: 'Pouch Kits',
 		subtitle: 'Starting from $19.95',
-		image: '/gifts-of-gratitude/pouch-kits.png',
+		image: assetPath('/gifts-of-gratitude/pouch-kits.png'),
 	},
 	{
 		id: 3,
 		title: 'Duo Kits',
 		subtitle: 'Starting from $10.95',
-		image: '/gifts-of-gratitude/duo-kits.png',
+		image: assetPath('/gifts-of-gratitude/duo-kits.png'),
 	},
 ]
 

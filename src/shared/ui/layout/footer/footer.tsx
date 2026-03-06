@@ -1,14 +1,15 @@
 import Link from 'next/link'
 import styles from './styles.module.scss'
 import { CrystalsLogoIcon } from '@/shared/ui/icons'
+import { assetPath } from '@/shared/lib/asset-path'
 
 const GALLERY_IMAGES = [
-	{ id: 1, alt: 'Crystals collection 1', src: '/footer/gallery-1.jpg' },
-	{ id: 2, alt: 'Crystals collection 2', src: '/footer/gallery-2.jpg' },
-	{ id: 3, alt: 'Crystals collection 3', src: '/footer/gallery-3.jpg' },
-	{ id: 4, alt: 'Crystals collection 4', src: '/footer/gallery-4.jpg' },
-	{ id: 5, alt: 'Crystals collection 5', src: '/footer/gallery-5.jpg' },
-	{ id: 6, alt: 'Crystals collection 6', src: '/footer/gallery-6.jpg' },
+	{ id: 1, alt: 'Crystals collection 1', src: assetPath('/footer/gallery-1.jpg') },
+	{ id: 2, alt: 'Crystals collection 2', src: assetPath('/footer/gallery-2.jpg') },
+	{ id: 3, alt: 'Crystals collection 3', src: assetPath('/footer/gallery-3.jpg') },
+	{ id: 4, alt: 'Crystals collection 4', src: assetPath('/footer/gallery-4.jpg') },
+	{ id: 5, alt: 'Crystals collection 5', src: assetPath('/footer/gallery-5.jpg') },
+	{ id: 6, alt: 'Crystals collection 6', src: assetPath('/footer/gallery-6.jpg') },
 ]
 
 const FOOTER_LINKS = [

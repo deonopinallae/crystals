@@ -1,4 +1,5 @@
 import styles from './styles.module.scss'
+import { assetPath } from '@/shared/lib/asset-path'
 
 export const CrystalClubSection = () => {
 	return (
@@ -24,17 +25,17 @@ export const CrystalClubSection = () => {
 			<img
 				alt="Crystal Club image 1"
 				className="col-start-2 row-start-1 h-[14rem] object-cover md:h-[16rem] min-[1382px]:h-[18.625rem] min-[1382px]:max-w-[24rem]"
-				src="/crystal-club-section/selenite-hand.png"
+				src={assetPath('/crystal-club-section/selenite-hand.png')}
 			/>
 			<img
 				alt="Crystal Club image 2"
 				className="col-start-1 row-start-2 h-[14rem] object-cover md:h-[16rem] min-[1382px]:h-[18.625rem] min-[1382px]:max-w-[11rem]"
-				src="/crystal-club-section/pink-tower.png"
+				src={assetPath('/crystal-club-section/pink-tower.png')}
 			/>
 			<img
 				alt="Crystal Club image 3"
 				className="col-start-2 row-start-2 h-[14rem] object-cover md:h-[16rem] min-[1382px]:h-[18.625rem] min-[1382px]:max-w-[24rem]"
-				src="/crystal-club-section/cards-in-hand.png"
+				src={assetPath('/crystal-club-section/cards-in-hand.png')}
 			/>
 		</section>
 	)

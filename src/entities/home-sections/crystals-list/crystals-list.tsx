@@ -1,6 +1,7 @@
 import { Button } from '@/shared/ui'
 import styles from './styles.module.scss'
 import { CircleDecoreIcon, CrystalListBgIcon } from '@/shared/ui/icons'
+import { assetPath } from '@/shared/lib/asset-path'
 
 const crystals = [
 	{ id: 1, name: 'Rose Quartz', color: '#FACCBF' },
@@ -11,8 +12,8 @@ const crystals = [
 ]
 
 const crystalsTypes = [
-	{ id: 1, name: 'Tower', imgUrl: '/crystals-list/tower.png', price: 'From $40' },
-	{ id: 2, name: 'Pyramid', imgUrl: '/crystals-list/pyramid.png', price: 'SOLD OUT' },
+	{ id: 1, name: 'Tower', imgUrl: assetPath('/crystals-list/tower.png'), price: 'From $40' },
+	{ id: 2, name: 'Pyramid', imgUrl: assetPath('/crystals-list/pyramid.png'), price: 'SOLD OUT' },
 ]
 
 export const CrystalsListSection = () => {
