@@ -12,8 +12,18 @@ const crystals = [
 ]
 
 const crystalsTypes = [
-	{ id: 1, name: 'Tower', imgUrl: assetPath('/crystals-list/tower.png'), price: 'From $40' },
-	{ id: 2, name: 'Pyramid', imgUrl: assetPath('/crystals-list/pyramid.png'), price: 'SOLD OUT' },
+	{
+		id: 1,
+		name: 'Tower',
+		imgUrl: assetPath('/crystals-list/tower.png'),
+		price: 'From $40',
+	},
+	{
+		id: 2,
+		name: 'Pyramid',
+		imgUrl: assetPath('/crystals-list/pyramid.png'),
+		price: 'SOLD OUT',
+	},
 ]
 
 export const CrystalsListSection = () => {
@@ -38,7 +48,9 @@ export const CrystalsListSection = () => {
 					Find your match
 				</Button>
 			</div>
-			<div className={`flex w-full flex-col gap-[1.5rem] md:flex-row lg:w-auto ${styles.crystalsListCards}`}>
+			<div
+				className={`flex w-full flex-col gap-[1.5rem] md:flex-row lg:w-auto ${styles.crystalsListCards}`}
+			>
 				<CrystalListBgIcon className={styles.crystalsListBg} />
 
 				{crystalsTypes.map(({ id, name, imgUrl, price }) => (
@@ -46,8 +58,14 @@ export const CrystalsListSection = () => {
 						key={id}
 						className={`flex h-[24rem] w-full flex-col items-center justify-between rounded-[1rem] border border-[#eac1bf] bg-white px-[1.3rem] py-[1.8rem] text-center md:h-[30rem] lg:h-[33rem] lg:w-[21rem] ${styles.crystalsListCard}`}
 					>
-						<div className="text-[1.125rem] leading-[1.125rem]">{name.toUpperCase()}</div>
-						<img src={imgUrl} alt={name} className="w-full max-w-[13rem] object-contain" />
+						<div className="text-[1.125rem] leading-[1.125rem]">
+							{name.toUpperCase()}
+						</div>
+						<img
+							src={imgUrl}
+							alt={name}
+							className="w-full max-w-[13rem] object-contain"
+						/>
 						<div className="text-[1rem] leading-[1rem]">{price}</div>
 					</div>
 				))}
