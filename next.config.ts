@@ -1,7 +1,6 @@
-import type { NextConfig } from 'next'
-
-const nextConfig: NextConfig = {
-	reactCompiler: true,
+module.exports = {
+	output: 'export',
+	basePath: '/crystals',
+	assetPrefix: '/crystals/',
+	images: { unoptimized: true },
 }
-
-export default nextConfig
